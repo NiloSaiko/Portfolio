@@ -1,4 +1,4 @@
-# Portefolio# Portfolio Web - HTML, CSS & JavaScript
+# Portfolio Web - HTML, CSS & JavaScript
 
 ## Description
 Ce projet est un portfolio web personnel conçu en HTML, CSS et JavaScript. Il permet de présenter des projets, une biographie, ainsi qu'un moyen de contact. L'objectif est d'offrir une interface moderne, réactive et interactive.
