@@ -1,0 +1,175 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a1a2f;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+header {
+  background-color: white;
+  padding: 10px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #0a1a2f;
+  font-weight: bold;
+}
+
+.cv-link a {
+  color: #c5a300;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+main > .hero > img{
+  width: 250px;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+}
+
+.hero button {
+  margin-top: 20px;
+  background-color: white;
+  color: #0a1a2f;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main > img {
+  width: 250px;
+  border-radius: 0%;
+}
+/* Carrousel Compétences */
+.competences {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  background-color: white;
+  color: #0a1a2f;
+  padding: 30px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c5a300;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #0a1a2f;
+  z-index: 2;
+}
+
+.carousel-btn.prev {
+  left: -10px;
+}
+
+.carousel-btn.next {
+  right: -10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #112240;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.footer input,
+.footer textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  resize: none ;
+}
+
+.footer button {
+  background-color: #c5a300;
+  color: #0a1a2f;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer-logo {
+  padding : 5px;
+  margin : 10px;
+  background-color: white;
+  border-radius: 11%;
+  position: relative;
+}

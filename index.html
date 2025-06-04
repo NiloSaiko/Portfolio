@@ -1,1 +1,108 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio GDLB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logoGDLB.png" alt="Logo GDLB">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cv-link">
+        <a href="cv.html">Curriculum Vitae</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <img src="chibiRmBg.png" alt="Image de présentation" width="10%" height="10%" >
+      <h2>Bonjour,</h2>
+      <h1>Je suis Gwendal Duvernet--Le Bras</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque.</p>
+      <button>À PROPOS</button>
+    </section>
+
+    <section id="competences" class="competences">
+      <h2>Compétences</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-wrapper">
+          <div class="carousel-slide">
+            <div class="carousel-item active">
+              <h3>Compétence 1</h3>
+              <p>Développer des applications informatiques simples</p>
+              <p><em>Exemple de trace</em></p>
+            </div>
+            <div class="carousel-item">
+              <h3>Compétence 2</h3>
+              <p>Appréhender et construire des algorithmes</p>
+            </div>
+            <div class="carousel-item">
+              <h3>Compétence 3</h3>
+              <p>Installer et configurer un poste de travail</p>
+            </div>
+            <div class="carousel-item">
+              <h3>Compétence 4</h3>
+              <p>Concevoir et mettre en place une base de données à partir d’un cahier des charges client</p>
+            </div>
+            <div class="carousel-item">
+              <h3>Compétence 5</h3>
+              <p>Identifier les besoins métiers des clients et des utilisateurs</p>
+            </div>
+            <div class="carousel-item">
+              <h3>Compétence 6</h3>
+              <p>Identifier ses aptitudes pour travailler dans une équipe</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mqaqwkop" method="post">
+      <input type="text" name="nom" placeholder="Nom">
+      <input type="email" name="email" placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <img src="Logo_IUT_Lannion.png" alt="Logo IUT" class="footer-logo" height="100" width="100">
+    <p>© 2025 Gwendal Duvernet--Le Bras</p>
+
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+
+    function updateSlide() {
+      const wrapper = document.querySelector('.carousel-wrapper');
+      const slideContainer = document.querySelector('.carousel-slide');
+      const slideWidth = wrapper.offsetWidth;
+      slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
+
+    function moveSlide(step) {
+      const slides = document.querySelectorAll('.carousel-item');
+      const totalSlides = slides.length;
+      currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+      updateSlide();
+    }
+
+    window.addEventListener('resize', updateSlide);
+    window.addEventListener('load', updateSlide);
+  </script>
+</body>
+</html>
