@@ -129,6 +129,81 @@ header {
 .carousel-btn.next {
   right: -10px;
 }
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.competence-card {
+  background-color: white;
+  color: #0a1a2f;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.competence-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-competence {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #c5a300;
+  color: #0a1a2f;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .competence-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .competence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.competence-card {
+  background-color: white;
+  color: #0a1a2f;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.competence-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-competence {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #c5a300;
+  color: #0a1a2f;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 /* Competeces */
 .project-section {
