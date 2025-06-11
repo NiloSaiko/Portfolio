@@ -53,7 +53,10 @@ header {
   width: 250px;
   border-radius: 50%;
 }
-
+.hero img{
+  width: 250px;
+  border-radius: 50%;
+}
 .hero h1 {
   font-size: 2.5rem;
   margin: 10px 0;
@@ -65,6 +68,38 @@ header {
 }
 
 .hero button {
+  margin-top: 20px;
+  background-color: white;
+  color: #0a1a2f;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.heros {
+  padding: 80px 20px;
+  text-align: center;
+}
+.heros img{
+  width: 250px;
+  border-radius: 50%;
+}
+.heros img{
+  width: 250px;
+  border-radius: 0%;
+}
+.heros h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.heros p {
+  max-width: 600px;
+  margin: auto;
+}
+
+.heros button {
   margin-top: 20px;
   background-color: white;
   color: #0a1a2f;
